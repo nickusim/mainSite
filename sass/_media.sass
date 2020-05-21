@@ -1,0 +1,222 @@
+@import "vars"
+
+/*==========  Desktop First  ==========*/
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1200px)
+	/**/
+
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px)
+	/**/
+
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px)
+	/**/
+
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px)
+	/**/
+
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 320px)
+	.header
+		grid-template-columns: 1fr
+		.logo
+			margin: 2%
+		nav
+			display: none
+
+	.main-page
+		grid-template-columns: 1fr
+		.title
+			width: 100%
+			padding: 0
+			position: relative
+			bottom: -50px
+			h1
+				font-size: 20px
+				text-align: center
+			p
+				width: 100%
+				text-align: center
+				font-size: 18px
+		.image
+
+			img
+				width: 100%
+
+	#advantages-page
+		grid-template-columns: 1fr
+		height: 140vh
+		.block-advantages
+			padding-top: 20px
+			.title
+				h2
+					font-size: 20px
+					text-align: center
+			.block-info
+				p
+					text-align: center
+					margin: auto
+					font-size: 16px
+			.advantages
+				padding-top: 20px
+				margin: 0
+				.title
+					p
+						margin-left: 20px
+						font-size: 12px
+						font-weight: 500
+				.adv-elements
+					.adv-element
+						grid-template-columns: 50px 300px
+						margin-top: 10px
+						p
+							font-size: 10px
+						img
+							margin-right: 7px
+							justify-self: end
+							align-self: center
+							width: 50%
+		.image
+			grid-row: 2 / 3
+			width: 100%
+			img
+				position: relative
+				top: -20px
+				width: 100%
+
+	#develop-page
+		grid-template-columns: 1fr
+		.info-block
+			padding-top: 25px
+			padding-left: 20px
+			justify-self: self-start
+			.title
+				h2
+					font-size: 20px
+					text-align: center
+			.choose-category
+				p
+					font-size: 12px
+					width: 270px
+			.block-info
+				.text
+					p
+						font-size: 14px
+						width: 200px
+					&::before
+						content: ''
+						width: 0
+						height: 0
+						position: absolute
+						background: url(/img/figure/Line.png) no-repeat
+						left: -20px
+						bottom: -4px
+		.image
+			display: none
+
+
+	.price
+		height: 300vh
+		.block-price
+			grid-template-columns: 1fr
+			grid-template-rows: 1fr 1fr 1fr
+			grid-gap: 10px
+			.price-element
+				justify-self: center
+				width: 250px
+				height: 400px
+				.img
+					width: 100px
+					margin: 5px auto
+				.title
+					font-size: 16px
+				.pages
+					p
+						margin: 0
+						font-size: 12px
+				.includes
+					p
+						font-size: 10px
+				.cost
+					font-size: 12px
+					bottom: -12px
+				a
+					bottom: -32px
+					padding: 20px 76px
+
+	#portfolio-page
+		height: 370vh
+		h2
+			font-size: 20px
+		.page-elements
+			grid-template-columns: 1fr
+			grid-row-gap: 0
+			.page-element
+				width: 250px
+				height: 250px
+
+	#order
+		width: 320px
+		h2
+			font-size: 20px
+		.elems
+			margin-top: 20px
+			#name, #email, #choose_order
+				width: 220px
+				height: 50px
+				font-size: 16px
+
+
+	.footer
+		grid-template-columns: 1fr
+		grid-template-rows: 20% 80%
+		.logo
+			padding-top: 10px
+		.contacts
+			h3
+				margin: 0
+				font-size: 18px
+			.contact
+				margin-top: 7px
+				text-align: center
+				a
+					font-size: 14px
+		.nav
+			display: none
+
+	
+
+
+/*==========  Mobile First  ==========*/
+
+/* Custom, iPhone Retina */
+@media only screen and (min-width : 320px)
+	/**/
+
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width : 480px)
+	/**/
+
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px)
+	/**/
+
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px)
+	/**/
+
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px)
+	/**/
+

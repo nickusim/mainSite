@@ -1,0 +1,319 @@
+@import "fonts"
+@import "libs"
+@import "base"
+@import "vars"
+
+.grid
+    display: grid
+    
+.header
+    grid-template-columns: 10% 90% 
+
+.logo
+    margin: 1%
+    justify-self: center
+    align-self: center
+    cursor: pointer
+
+.navigation
+    grid-template-columns: 150px 120px 120px 120px
+    justify-content: center
+    align-items: center
+    a
+        color: #000000
+        text-decoration: none
+        li
+            display: flex
+            text-align: center
+            .dot-nav
+                border-radius: 50%
+                position: space-between
+                margin: auto 0
+                margin-right: 10px
+                width: 12px
+                height: 12px
+                background: linear-gradient(180deg, rgba(151,211,231,1) 0%, rgba(97,187,215,1) 100%)
+            p
+                font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+                font-size: 12px
+                color: #606060
+
+
+// MAIN
+.main-page
+    position: relative
+    height: 100vh
+    grid-template-columns: 1fr 1fr
+    .title
+        width: 340px
+        justify-self: center
+        padding-top: 33%
+        h1
+            margin: 0
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+            font-size: 48px
+            font-weight: bold
+            text-align: center
+        p
+            text-align: center
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+            font-size: 24px
+            font-weight: normal
+
+
+// ADVANTAGES
+#advantages-page
+    height: 100vh
+    grid-template-columns: 1fr 1fr
+    .image
+        position: relative
+
+.block-advantages
+    padding-top: 10%
+    .title
+        h2
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+            font-size: 34px
+            font-weight: 900
+
+.block-info
+    .text
+        position: relative
+        p
+            width: 270px
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+            font-size: 24px
+            font-weight: normal
+        &::before
+            content: ''
+            width: 20px
+            height: 100%
+            position: absolute
+            background: url(/img/figure/Line.png) no-repeat
+            left: -30px
+            bottom: -7px
+
+
+
+
+.advantages
+    margin-top: 100px
+    .title
+        p
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+            font-size: 20px
+            font-weight: bold
+
+.adv-elements
+    .adv-element
+        grid-template-columns: 10% 90%
+        margin-top: 25px
+        p
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+            font-size: 18px
+            font-weight: normal
+    
+
+// DEVELOP
+
+#develop-page
+    grid-template-columns: 1fr 1fr
+    .block-info
+        .text
+            p
+                width: 330px
+    .info-block
+        position: relative
+        padding-top: 20%
+        justify-self: center
+
+// PRICES
+.price
+    height: 100vh
+    position: relative
+    .block-price
+        grid-template-columns: 350px 350px 350px
+        grid-gap: 10%
+        justify-content: center
+        .price-element
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+            width: 100%
+            height: 700px
+            background: #dadada
+            box-shadow: 2px 2px 18px 1px #dadada
+            transition: box-shadow .3s ease
+            &:hover
+                box-shadow: 6px 6px 18px 1px #585858
+            .img
+                margin-top: 10px
+                img
+                    margin: auto
+            .title
+                margin-top: 10px 
+                font-size: 18px
+                font-weight: bold
+                text-align: center
+            .pages
+                font-size: 18px
+                font-weight: normal
+            .includes
+                font-size: 14px
+                font-weight: lighter
+            .cost
+                position: relative
+                bottom: -50px
+                margin-left: 10px
+            a
+                bottom: -100px
+                position: relative
+                padding: 20px 126px
+                color: #000
+                border: 2px solid rgba(97,187,215,1)
+                border-radius: 25px
+                background: transparent
+                transition: all .3s ease
+                text-decoration: none
+                font-size: 24px
+                font-weight: normal
+                &:hover
+                    background: linear-gradient(180deg, rgba(151,211,231,1) 0%, rgba(97,187,215,1) 100%)
+                    color: #ffffff
+
+
+// PORTFOLIO
+#portfolio-page
+    height: 100vh
+    h2
+        text-align: center
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+        font-size: 34px
+        font-weight: normal
+    .page-elements
+        width: 100%
+        grid-template-columns: 1fr 1fr 1fr
+        grid-template-rows: 1fr 1fr 1fr
+        grid-row-gap: 50px
+        .page-element
+            width: 300px
+            height: 300px
+            justify-self: center
+            transition: all .3s ease
+            position: relative
+            &:nth-child(1)
+                background: url(/img/portfolio/1.jpg) no-repeat
+                background-size: 150%
+                background-position: center
+            &:nth-child(2)
+                background: url(/img/portfolio/2.jpg) no-repeat
+                background-size: 150%
+                background-position: center
+            &:nth-child(3)
+                background: url(/img/portfolio/3.jpg) no-repeat
+                background-size: 150%
+                background-position: center
+            &:nth-child(4)
+                background: url(/img/portfolio/4.jpg) no-repeat
+                background-size: 150%
+                background-position: center
+            &:nth-child(5)
+                background: url(/img/portfolio/5.jpg) no-repeat
+                background-size: 150%
+                background-position: center
+            &:nth-child(6)
+                background: url(/img/portfolio/6.jpg) no-repeat
+                background-size: 150%
+                background-position: center
+            &:hover
+                background-size: 170%
+                // &::before
+                //     content: ''
+                //     width: 70px
+                //     height: 70px
+                //     left: 40%
+                //     bottom: 40%
+                //     position: absolute
+                //     background: url(/img/prices/lupa.png) no-repeat
+                
+
+
+// ORDERS
+
+#order
+    position: relative
+    width: 50%
+    margin: auto
+    height: 100vh
+    h2
+        text-align: center
+    .elems
+        margin-top: 100px
+        #name, #email, #choose_order, .button
+            display: block
+            margin: 20px auto
+        #name, #email, #choose_order
+            padding: 2%
+            outline: none
+            width: 300px
+            height: 70px
+            border: 2px solid rgba(97,187,215,1)
+            border-radius: 20px
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+            font-size: 24px
+            font-weight: normal
+            color: #999999
+        .button
+            width: 200px
+            height: 50px
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+            font-size: 24px
+            background: transparent
+            font-weight: normal
+            color: #000000
+            border: 2px solid rgba(97,187,215,1)
+            border-radius: 20px
+            transition: all .3s ease
+            outline: none
+            &:hover
+                background: rgba(97,187,215,1)
+                color: #ffffff
+
+
+// FOOTER
+.footer
+    height: 60vh
+    background: linear-gradient(180deg, rgba(151,211,231,1) 0%, rgba(97,187,215,1) 100%)
+    grid-template-columns: 10% 45% 45%
+    .logo
+        padding-top: 10%
+        align-self: self-start
+    .contacts
+        justify-self: center
+        width: 100px
+        h3
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+            font-size: 24px
+            font-weight: bold
+        .contact
+            margin-top: 10px
+            a
+                color: #000000
+                font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+                font-size: 20px
+                font-weight: normal
+                text-decoration: none
+    .nav
+        margin-top: 50px
+        ul
+            a
+                color: #000000
+                font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+                font-size: 20px
+                font-weight: normal
+                text-decoration: none
+                li
+                    p
+                        margin: 0
+
+
+
+@import "media" // Всегда в конце
