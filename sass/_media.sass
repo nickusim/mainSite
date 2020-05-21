@@ -123,7 +123,7 @@
 
 
 	.price
-		height: 300vh
+		height: 200vh
 		.block-price
 			grid-template-columns: 1fr
 			grid-template-rows: 1fr 1fr 1fr
@@ -152,7 +152,7 @@
 					padding: 20px 76px
 
 	#portfolio-page
-		height: 370vh
+		height: 300vh
 		h2
 			font-size: 20px
 		.page-elements
@@ -297,7 +297,7 @@
 
 
 	.price
-		height: 300vh
+		height: 200vh
 		.block-price
 			grid-template-columns: 1fr
 			grid-template-rows: 1fr 1fr 1fr
@@ -326,9 +326,10 @@
 					padding: 20px 76px
 
 	#portfolio-page
-		height: 370vh
+		height: 240vh
 		h2
 			font-size: 20px
+			font-weight: bold
 		.page-elements
 			grid-template-columns: 1fr
 			grid-row-gap: 0
@@ -338,6 +339,7 @@
 
 	#order
 		width: 320px
+		height: 70vh
 		h2
 			font-size: 20px
 		.elems
@@ -369,20 +371,796 @@
 
 /* Extra Small Devices, Phones */
 @media only screen and (min-width : 480px)
-	/**/
+	.header
+		grid-template-columns: 1fr
+		.logo
+			margin: 5%
+			justify-self: center
+		nav
+			margin-top: 2%
+			display: none
+
+	.main-page
+		grid-template-columns: 1fr
+		.title
+			width: 100%
+			padding: 0
+			position: relative
+			align-self: center
+			bottom: 0
+			h1
+				font-size: 20px
+				text-align: center
+			p
+				width: 100%
+				text-align: center
+				font-size: 16px
+		.image
+			justify-self: center
+			align-self: center
+			position: relative
+			width: 400px
+			left: 0px
+			img
+				width: 100%
+
+	#advantages-page
+		grid-template-columns: 1fr
+		height: 170vh
+		.block-advantages
+			padding-top: 20px
+			.title
+				h2
+					font-size: 20px
+					text-align: center
+			.block-info
+				p
+					text-align: center
+					font-size: 16px
+					margin: auto
+				.text
+					&::before
+						content: ''
+						width: 20px
+						height: 100%
+						position: absolute
+						background: url(/img/figure/Line.png) no-repeat
+						left: -20px
+						bottom: -2px
+			.advantages
+				padding-top: 20px
+				padding-left: 35px
+				margin: 0
+				.title
+					p
+						margin-left: 0
+						font-size: 16px
+						font-weight: 500
+				.adv-elements
+					.adv-element
+						grid-template-columns: 50px 300px
+						margin-top: 10px
+						p
+							font-size: 14px
+							text-align: start
+						img
+							margin-right: 7px
+							justify-self: center
+							align-self: center
+							width: 60%
+		.image
+			width: 400px
+			grid-row: 2 / 3
+			justify-self: center
+			img
+				position: relative
+				top: -20px
+				width: 100%
+
+	#develop-page
+		grid-template-columns: 1fr
+		.info-block
+			padding-top: 25px
+			padding-left: 20px
+			justify-self: self-start
+			.title
+				h2
+					font-size: 20px
+					text-align: center
+			.choose-category
+				p
+					font-size: 16px
+					width: 270px
+			.block-info
+				.text
+					p
+						font-size: 16px
+						width: 250px
+						margin-left: 20px
+					&::before
+						content: ''
+						width: 7px
+						height: 100%
+						position: absolute
+						background: url(/img/figure/Line.png) no-repeat
+						left: 5px
+						bottom: 0px
+		.image
+			display: none
+			width: 400px
+			img
+				width: 100%
+
+
+	.price
+		margin-top: 40px
+		height: 200vh
+		.block-price
+			grid-template-columns: 1fr
+			grid-template-rows: 1fr 1fr 1fr
+			grid-row-gap: 30px
+			.price-element
+				justify-self: center
+				width: 250px
+				height: 400px
+				.img
+					width: 100px
+					margin: 5px auto
+				.title
+					font-size: 14px
+				.pages
+					p
+						margin: 0
+						font-size: 12px
+				.includes
+					p
+						font-size: 10px
+				.cost
+					font-size: 12px
+					bottom: -12px
+				a
+					bottom: -32px
+					padding: 20px 76px
+
+	#portfolio-page
+		height: 140vh
+		padding: 20px
+		h2
+			font-size: 20px
+			font-weight: bold
+		.page-elements
+			grid-template-columns: 1fr 1fr
+			grid-gap: 20px
+			.page-element
+				width: 220px
+				height: 220px
+
+	#order
+		width: 500px
+		height: 80vh
+		h2
+			font-size: 24px
+			font-weight: blod
+		.elems
+			margin-top: 40px
+			#name, #email, #choose_order
+				width: 300px
+				height: 50px
+				font-size: 16px
+
+
+	.footer
+		grid-template-columns: 20% 40% 40%
+		grid-template-rows: 1fr
+		.logo
+			padding-top: 10px
+		.contacts
+			h3
+				margin-top: 50px
+				font-size: 22px
+			.contact
+				margin-top: 7px
+				text-align: center
+				a
+					font-size: 18px
+		.nav
+			display: block
 
 
 /* Small Devices, Tablets */
 @media only screen and (min-width : 768px)
-	/**/
+	.header
+		grid-template-columns: 20% 80%
+		.logo
+			margin: 5%
+			justify-self: start
+		nav
+			margin-top: 2%
+			display: block
+			.navigation
+				margin: 0
+
+	.main-page
+		grid-template-columns: 1fr 1fr
+		.title
+			width: 100%
+			padding-left: 20px
+			position: relative
+			align-self: center
+			bottom: 100px
+			h1
+				font-size: 26px
+				text-align: center
+			p
+				width: 100%
+				text-align: center
+				font-size: 22px
+		.image
+			align-self: center
+			position: relative
+			width: 480px
+			left: -70px
+			img
+				width: 100%
+
+	#advantages-page
+		grid-template-columns: 1fr 1fr
+		height: 90vh
+		.block-advantages
+			padding-top: 20px
+			.title
+				h2
+					font-size: 26px
+					text-align: start
+			.block-info
+				p
+					text-align: start
+					font-size: 20px
+					margin: 0
+				.text
+					&::before
+						content: ''
+						width: 20px
+						height: 100%
+						position: absolute
+						background: url(/img/figure/Line.png) no-repeat
+						left: -20px
+						bottom: -2px
+			.advantages
+				padding-top: 20px
+				margin: 0
+				.title
+					p
+						margin-left: 0
+						font-size: 16px
+						font-weight: 500
+				.adv-elements
+					.adv-element
+						grid-template-columns: 50px 300px
+						margin-top: 10px
+						p
+							font-size: 14px
+							text-align: start
+						img
+							margin-right: 7px
+							justify-self: center
+							align-self: center
+							width: 60%
+		.image
+			width: 100%
+			grid-row: 1 / 2
+			img
+				position: relative
+				top: -20px
+				width: 100%
+
+	#develop-page
+		grid-template-columns: 1fr 1fr
+		.info-block
+			padding-top: 25px
+			padding-left: 20px
+			justify-self: self-start
+			.title
+				h2
+					font-size: 24px
+					text-align: center
+			.choose-category
+				p
+					font-size: 16px
+					width: 270px
+			.block-info
+				.text
+					p
+						font-size: 18px
+						width: 250px
+						margin-left: 20px
+					&::before
+						content: ''
+						width: 7px
+						height: 100%
+						position: absolute
+						background: url(/img/figure/Line.png) no-repeat
+						left: 5px
+						bottom: 0px
+		.image
+			display: block
+			width: 400px
+			img
+				width: 100%
+
+
+	.price
+		height: 175vh
+		.block-price
+			grid-template-columns: 1fr 1fr
+			grid-row-gap: 30px
+			.price-element
+				justify-self: center
+				width: 250px
+				height: 400px
+				.img
+					width: 100px
+					margin: 5px auto
+				.title
+					font-size: 16px
+				.pages
+					p
+						margin: 0
+						font-size: 12px
+				.includes
+					p
+						font-size: 10px
+				.cost
+					font-size: 12px
+					bottom: -12px
+				a
+					bottom: -32px
+					padding: 20px 76px
+
+	#portfolio-page
+		height: 140vh
+		h2
+			font-size: 24px
+			font-weight: bold
+		.page-elements
+			grid-template-columns: 1fr 1fr
+			grid-row-gap: 0px
+			.page-element
+				width: 250px
+				height: 250px
+
+	#order
+		width: 500px
+		height: 90vh
+		margin-top: 80px
+		h2
+			font-size: 24px
+			font-weight: blod
+		.elems
+			margin-top: 40px
+			#name, #email, #choose_order
+				width: 300px
+				height: 50px
+				font-size: 16px
+
+
+	.footer
+		grid-template-columns: 20% 40% 40%
+		grid-template-rows: 1fr
+		.logo
+			padding-top: 10px
+		.contacts
+			h3
+				margin-top: 50px
+				font-size: 22px
+			.contact
+				margin-top: 7px
+				text-align: center
+				a
+					font-size: 18px
+		.nav
+			display: block
 
 
 /* Medium Devices, Desktops */
 @media only screen and (min-width : 992px)
-	/**/
+	.header
+		grid-template-columns: 20% 80%
+		.logo
+			margin: 5%
+			justify-self: start
+		nav
+			margin-top: 2%
+			display: block
+			.navigation
+				margin: 0
 
+	.main-page
+		grid-template-columns: 1fr 1fr
+		.title
+			width: 100%
+			padding-left: 20px
+			position: relative
+			align-self: center
+			bottom: 100px
+			h1
+				font-size: 28px
+				text-align: center
+			p
+				width: 100%
+				text-align: center
+				font-size: 22px
+		.image
+			align-self: center
+			position: relative
+			width: 480px
+			left: -70px
+			img
+				width: 100%
+
+	#advantages-page
+		grid-template-columns: 1fr 1fr
+		height: 90vh
+		.block-advantages
+			padding-top: 20px
+			.title
+				h2
+					font-size: 26px
+					text-align: start
+			.block-info
+				p
+					text-align: start
+					font-size: 22px
+					margin: 0
+				.text
+					&::before
+						content: ''
+						width: 20px
+						height: 100%
+						position: absolute
+						background: url(/img/figure/Line.png) no-repeat
+						left: -20px
+						bottom: -2px
+			.advantages
+				padding-top: 20px
+				margin: 0
+				.title
+					p
+						margin-left: 0
+						font-size: 18px
+						font-weight: 500
+				.adv-elements
+					.adv-element
+						grid-template-columns: 50px 300px
+						margin-top: 10px
+						p
+							font-size: 16px
+							text-align: start
+						img
+							margin-right: 7px
+							justify-self: center
+							align-self: center
+							width: 65%
+		.image
+			width: 100%
+			grid-row: 1 / 2
+			img
+				position: relative
+				top: -20px
+				width: 100%
+
+	#develop-page
+		grid-template-columns: 1fr 1fr
+		.info-block
+			padding-top: 25px
+			padding-left: 20px
+			justify-self: center
+			.title
+				h2
+					font-size: 26px
+					text-align: center
+			.choose-category
+				p
+					font-size: 18px
+					width: 270px
+			.block-info
+				.text
+					p
+						font-size: 18px
+						width: 250px
+						margin-left: 20px
+					&::before
+						content: ''
+						width: 7px
+						height: 100%
+						position: absolute
+						background: url(/img/figure/Line.png) no-repeat
+						left: 5px
+						bottom: 0px
+		.image
+			display: block
+			width: 400px
+			img
+				width: 100%
+
+
+	.price
+		height: 75vh
+		.block-price
+			grid-template-columns: 1fr 1fr 1fr
+			grid-template-rows: 1fr
+			grid-row-gap: 30px
+			.price-element
+				justify-self: center
+				width: 250px
+				height: 400px
+				.img
+					width: 100px
+					margin: 5px auto
+				.title
+					margin-left: 10px
+					font-size: 16px
+				.pages
+					margin-left: 10px
+					p
+						margin: 0
+						font-size: 12px
+				.includes
+					p
+						margin-left: 10px
+						font-size: 10px
+				.cost
+					font-size: 12px
+					bottom: -12px
+				a
+					display: block
+					margin: auto
+					text-align: center
+					bottom: -24px
+					padding: 10px 30px
+
+	#portfolio-page
+		height: 140vh
+		h2
+			font-size: 26px
+			font-weight: bold
+		.page-elements
+			grid-template-columns: 1fr 1fr
+			grid-row-gap: 20px
+			.page-element
+				width: 250px
+				height: 250px
+
+	#order
+		width: 500px
+		height: 90vh
+		margin-top: 80px
+		h2
+			font-size: 26px
+			font-weight: blod
+		.elems
+			margin-top: 40px
+			#name, #email, #choose_order
+				width: 300px
+				height: 50px
+				font-size: 16px
+
+
+	.footer
+		grid-template-columns: 20% 40% 40%
+		grid-template-rows: 1fr
+		.logo
+			padding-top: 10px
+		.contacts
+			h3
+				margin-top: 50px
+				font-size: 24px
+			.contact
+				margin-top: 7px
+				text-align: center
+				a
+					font-size: 18px
+		.nav
+			display: block
 
 /* Large Devices, Wide Screens */
 @media only screen and (min-width : 1200px)
-	/**/
+	.header
+		grid-template-columns: 20% 80%
+		.logo
+			margin: 5%
+			justify-self: start
+		nav
+			margin-top: 2%
+			display: block
+			.navigation
+				margin: 0
+
+	.main-page
+		grid-template-columns: 1fr 1fr
+		.title
+			width: 100%
+			padding-left: 20px
+			position: relative
+			align-self: center
+			bottom: 100px
+			h1
+				font-size: 32px
+				text-align: center
+			p
+				width: 100%
+				text-align: center
+				font-size: 24px
+		.image
+			align-self: center
+			position: relative
+			width: 550px
+			left: -20px
+			img
+				width: 100%
+
+	#advantages-page
+		grid-template-columns: 1fr 1fr
+		height: 90vh
+		.block-advantages
+			padding-top: 20px
+			.title
+				h2
+					font-size: 30px
+					text-align: start
+			.block-info
+				p
+					text-align: start
+					font-size: 24px
+					margin: 0
+				.text
+					&::before
+						content: ''
+						width: 20px
+						height: 100%
+						position: absolute
+						background: url(/img/figure/Line.png) no-repeat
+						left: -20px
+						bottom: -2px
+			.advantages
+				padding-top: 20px
+				margin: 0
+				.title
+					p
+						margin-left: 0
+						font-size: 20px
+						font-weight: 500
+				.adv-elements
+					.adv-element
+						grid-template-columns: 50px 300px
+						margin-top: 10px
+						p
+							font-size: 18px
+							text-align: start
+						img
+							margin-right: 7px
+							justify-self: center
+							align-self: center
+							width: 80%
+		.image
+			width: 100%
+			grid-row: 1 / 2
+			img
+				position: relative
+				top: -20px
+				width: 100%
+
+	#develop-page
+		grid-template-columns: 1fr 1fr
+		.info-block
+			padding-top: 25px
+			padding-left: 20px
+			justify-self: center
+			.title
+				h2
+					font-size: 30px
+					text-align: center
+			.choose-category
+				p
+					font-size: 20px
+					width: 270px
+			.block-info
+				.text
+					p
+						font-size: 20px
+						width: 250px
+						margin-left: 20px
+					&::before
+						content: ''
+						width: 7px
+						height: 100%
+						position: absolute
+						background: url(/img/figure/Line.png) no-repeat
+						left: 5px
+						bottom: 0px
+		.image
+			display: block
+			width: 560px
+			img
+				width: 100%
+
+
+	.price
+		height: 100vh
+		.block-price
+			grid-template-columns: 1fr 1fr 1fr
+			grid-template-rows: 1fr
+			grid-row-gap: 30px
+			.price-element
+				justify-self: center
+				width: 320px
+				height: 500px
+				.img
+					width: 100px
+					margin: 5px auto
+				.title
+					margin-left: 10px
+					font-size: 16px
+				.pages
+					margin-left: 10px
+					p
+						margin: 0
+						font-size: 14px
+				.includes
+					p
+						margin-left: 10px
+						font-size: 14px
+				.cost
+					font-size: 16px
+					bottom: -12px
+				a
+					display: block
+					margin: auto
+					text-align: center
+					bottom: -24px
+					padding: 10px 30px
+
+	#portfolio-page
+		height: 110vh
+		h2
+			font-size: 30px
+			font-weight: bold
+		.page-elements
+			grid-template-columns: 1fr 1fr 1fr
+			grid-row-gap: 20px
+			.page-element
+				width: 250px
+				height: 250px
+
+	#order
+		width: 500px
+		height: 90vh
+		margin-top: 80px
+		h2
+			font-size: 30px
+			font-weight: bold
+		.elems
+			margin-top: 40px
+			#name, #email, #choose_order
+				width: 400px
+				height: 50px
+				font-size: 16px
+
+
+	.footer
+		grid-template-columns: 20% 40% 40%
+		grid-template-rows: 1fr
+		.logo
+			padding-top: 10px
+		.contacts
+			h3
+				margin-top: 50px
+				font-size: 26px
+			.contact
+				margin-top: 7px
+				text-align: center
+				a
+					font-size: 20px
+		.nav
+			display: block
 
